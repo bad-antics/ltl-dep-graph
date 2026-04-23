@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_dep_graph
+
+import std::io
+use ltl_dep_graph as lib
+
+fn main() {
+    io::println("ltl_dep_graph demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
